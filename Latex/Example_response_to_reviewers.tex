@@ -1,0 +1,222 @@
+% --------------------- document type and size of the margins: ---------------------
+\documentclass[10pt,a4paper,notitlepage,twoside]{article}  
+\usepackage[top=2.5cm,left=2cm,right=2cm,bottom=2.5cm]{geometry} % customizes the size of page margins
+
+% --------------------- headers and footers of the document: ---------------------
+\usepackage{fancyhdr} % load package to create headers and footers
+\pagestyle{fancy} % to customize headers and footers
+\lhead{M. Combe et al. 2014}  % on the left position
+\rhead{Response to Reviewer~3} % on the right position
+\chead{\today} % on the center position
+\renewcommand{\headrulewidth}{0.4pt} % adds a horizontal line in the header
+\renewcommand{\footrulewidth}{0.4pt} % adds a horizontal line in the footer
+
+% --------------------- bullet lists options: ---------------------
+\usepackage{enumitem} % to allow making bullet lists
+\usepackage{scrextend} % to add an extra indent within the enumerated lists
+
+% --------------------- figures and reference list: ---------------------
+\usepackage{graphicx} % to insert figures
+\usepackage{natbib} % to include literature references
+
+
+% ============= START OF DOCUMENT HERE ============= 
+\begin{document}
+
+\large{Third round of reviews for the manuscript (\itshape{bg-2014-123}): \scshape{Two 
+perspectives on the coupled carbon, water, and energy exchange in the planetary boundary layer.}}
+
+\normalsize
+
+\ 
+
+\textbf{We would like to thank Reviewer~3 for his very positive opinion of our manuscript. We have introduced improvements to the manuscript, which are highlighted in yellow in the attached version. Below, we provide a point-by-point response to the Reviewer's comments in bold-face.}
+
+\
+
+\underline{Short general comment from Reviewer~3:}
+
+\
+
+The paper addresses important questions that are relevant to the wide community of land-surface and carbon cycle modelling, addressing two important questions regarding the relative contribution of different processes in the energy, water and carbon budgets as well as the complexity required for simulating the coupling. I find the paper well written and the interpretation of the results is sound. However, I think the paper would benefit from emphasizing and/or clarifying some of the conclusions. Please see the comments in the report.
+
+\
+
+\textbf{We agree with Reviewer~3 that the conclusions and the abstract can benefit from a few clarifications indicated by the Reviewer in his/her report. We respond to each suggestion below.}
+
+\ 
+
+
+\underline{General comments from the report:}
+
+\
+
+This paper investigates the coupling between water, energy and carbon cycles using two different
+types of land surface models based meteorological surface-exchange (A-gs) and Carbon-storage
+vegetation (GECROS crop model) perspectives, both coupled to the same atmospheric mixed
+layer model in order to assess the contribution from different processes/forcings on the budgets
+of water, energy and carbon over a maize field.
+
+The paper addresses important questions that are relevant to the wide community of land-
+surface and carbon cycle modelling. 
+
+\
+
+\textbf{We thank the Reviewer for his acknowledgement of the relevance of our study.}
+
+\
+
+The first question regarding the contribution of upper
+and surface processes on the different budgets is addressed with sensitivity experiments at the
+surface and upper atmospheric boundaries by reducing soil moisture and increasing large-scale
+subsidence. The experiments show that both forcings can play an equally important role. They
+both change the latent heat fluxes (increasing/decreasing for enhanced subsidence/soil moisture
+depletion forcings respectively) and reduce the water use efficiency with the same magnitude
+vias different mechanisms. Despite atmospheric and surface forcings being equally important
+on the energy and water surface fluxes, for the carbon cycle the story is different. The reason
+for this being that NEE is only significantly affected by the change in soil moisture via changes
+in the stomatal conductance. This is because there is no stomatal response to the increasing
+vapour pressure deficit in the higher subsidence case. Is this a realistic assumption?
+
+\ 
+
+\textbf{The suggestion that there is no response to VPD in the high subsidence case is based on a misunderstanding. The stomatal conductance formulation of A-gs is dependent on VPD, as shown in Fig 1 of this response, and as described in \citet{Jacobs:1996}. In the high subsidence case, VPD does slightly increase (by 9\%, i.e. +0.2 kPa, at 14:00 UTC). It generates a small increase in the (ci-ca) gradient (+ 20 ppm at 14:00 UTC), which is compensated by a small decrease in the canopy conductance for CO$_2$ transfer (-0.2 mm s$^{-1}$ at 14:00 UTC). Thus, there is no visible response of NPP to the small increase in VPD.}
+
+\textbf{For clarification, we added the reference of \citet{Jacobs:1996}, and the following sentence to the description of the model on page 12:} 
+``\textit{In A-gs, the upscaled canopy conductance ($g_c$) is hence calculated as a function of light, temperature, of the stomata to atmospheric CO$_2$ concentration ratio, of VPD, soil water stress, and of LAI.}"
+\textbf{We also explain why the small increase in VPD does not have an impact on NPP under high subsidence on page 20 and 21 (see the enclosed revised manuscript).}
+
+
+% Figure 1: response to VPD
+%\begin{figure}[t] 
+%\vspace*{2mm}
+%\begin{center} 
+%\includegraphics[width=0.5\linewidth]{VPD_response} 
+%\end{center}
+%\caption{Response of the Ci/Ca ratio to VPD (i.e. $Ds$) in the A-gs model \citep{Jacobs:1996}. The C3 plants are shown with blue dots and C4 with red stars.}
+%\label{fig:VPDresponse}
+%\end{figure}
+
+
+\
+
+The results from the two sensitivity experiments show that the 
+variation of atmospheric CO$_2$ is
+much larger for the increased subsidence than for the reduced soil moisture, despite subsidence
+having no impact significant impact on NEE; whereas soil moisture decrease does have a larger
+impact on NEE. This is because the changes in the subsidence and soil moisture lead to changes
+of a few percent in the CO$_2$ fluxes at the surface and mixed layer top (via NEE and entrainment);
+while the change of the mixed layer height is around 40\% for increased subsidence and only
+a few percent for the decreased soil moisture. Is this large change in the mixed layer height
+realistic?
+
+\
+
+\textbf{The high value of subsidence used in our sensitivity analysis ($w_s$ = $4 \times 10^{-5}$ s$^{-1}$, so about 4~cm~s$^{-1}$ if we consider an ABL of a 1000 m) is a value characteristic of large high pressure system situations. It is realistic because it can occur over land in the Netherlands. As a consequence, the related 40\% reduction in the ABL height is also realistic. However, we agree with the reviewer that this is not a frequent situation.} %no modifications
+
+\
+
+If so, it emphasizes the importance of having an accurate upper atmospheric forcing
+when interpreting the variability of atmospheric CO$_2$. I think the higher sensitivity of the upper
+forcing on the change in the mixed layer height compared to the change in the surface fluxes
+should be emphasized as it is of key importance in order to understand/explain the variability
+of CO$_2$ in the well-mixed daytime planetary boundary layer.
+
+\
+
+\textbf{We added emphasis on the importance of using correct estimates of the large-scale forcings for the daytime CO$_2$ budget in the conclusion:} ``\textit{Therefore, ABL dynamics need to be considered when interpreting observations of atmospheric CO2 mole fractions over crops. Using correct estimates of the large-scale forcings are also of key importance.}"
+
+\
+
+Another interesting result from this study is that both NEE and entrainment fluxes play an 
+equally important role in the evolution of the CO$_2$ in the mixed layer. These results confirm
+the challenging task that flux inversion systems face in order to be able to retrieve the surface
+fluxes of CO$_2$ from the observed atmospheric CO$_2$ in the planetary boundary layer.
+
+The second question addressed is on the complexity of the models required to simulate interactions of a cropland with the atmosphere. Although the evaluation shows that the A-gs
+outperforms the crop model on a specific day, I think the comparison is not completely fair. The outperformance of A-gs depends on the tuning using atmospheric and land surface observations for a specific site and day. The comparison might lead to different results if the A-gs
+was adapted to run over longer time scales than one day without the observed forcings (e.g.
+within a climate model). This is already mentioned in the conclusions, but perhaps it is should
+be more clearly stated in the abstract.
+
+\
+
+\textbf{We agree with the Reviewer that a seasonal scheme like GECROS is of course more difficult to "tune right" for one specific day than a diurnal scheme like A-gs. This difference of scales between the two models we use is indeed one of the aspects determining the outcome of the models intercomparison. We do emphasize this in the conclusions. 
+In addition, and as suggested by the reviewer, we added a sentence in the abstract mentioning this aspect:}
+``\textit{We show [MXL-A-gs] outperforms [MXL-GECROS]. We find this performance is partly due to the difference of scales at which the models were made to run for. But most important, this performance strongly depends on the sensitivity of the modelled (...) water stress.}"
+
+\
+
+Although the study concentrates on a single site and a single day, it uses an impressive 
+comprehensive set of observations to assess all the relevant model parameters for the water, energy and
+carbon cycles. Moreover, such coupling and sensitivity studies require specific conditions, when
+boundary layer is well mixed and advection is not strong in order to minimize the intereference
+of non-local effect. The experiments and interpretation are both sound and the mechanisms
+that play a role in the experiments are well explained.
+
+\
+
+\textbf{We agree with the Reviewer that a strong component of our research is the comprehensive observational dataset we use. We thank him/her for this acknowledgement. }
+
+\
+
+\underline{Specific comments:}
+
+\begin{description}
+\item[C1: Figure 2:] The importance of having a two way coupling compared to one way coupling is only
+shown with the GECROS model. It would have been interesting to also do the comparison
+with the A-gs on 4 August 2007.
+
+\textbf{We are not sure if we interpret the remark of the Reviewer correctly. For the sake of clarity, we would like to stress that Fig. 2 in the manuscript does not show the importance of the two-way coupling for GECROS. This figure is intended to validate the new version of GECROS (remember we made modifications to the model), before fully coupling it with the MXL model. If the Reviewer means to say that a validation of the uncoupled A-gs would add value to our manuscript, then we would like to point that such validation has been done for grapevine by \citet{Jacobs:1996}, and for grass by \citet{Ronda:2001}. We added this information to the manuscript in the methods section.}
+
+\item[C2: Section 2.3:] How is CO$_2$ initialised in the boundary layer and free troposphere for the
+simulations on 4 August 2007?
+
+\textbf{The ABL CO$_2$ mole fraction is initialized at 422 ppm, with an initial jump of -50 ppm and a lapse rate of -10 ppb m$^{-1}$, based on the typical values published in \citet{CassoTorralba:2008}, and in order to reproduce the observed daytime CO$_2$ decrease. These initial values are specified in the appendix Table A1, as indicated in the text.}
+
+\item[C3:] I find the term "diurnal" throughout the paper a bit confusing. This study is limited to
+the daytime well-mixed boundary layer. I think it would be clearer if "daytime" was used
+instead of or together with "diurnal".
+
+\textbf{We agree with the reviewer and replaced the term daytime where the term diurnal appeared, except in combination of the word "scale" (since it is more proper to talk about a "diurnal scale" than a "daytime scale").}
+
+\item[C4: Section 3.3] Are the changes in atmospheric CO$_2$ of 12 ppm in the high subsidence case
+forcing changes in NEE via the CO$_2$ gradient term in equation 3? If so, the impact from
+the increased subsidence seems to show that there is a very small sensitivity.
+
+\textbf{As specified in the manuscript on page 23, the 12 ppm decrease in CO$_2$ generated by subsidence is due to the reduction in ABL height, which increases the surface and entrainment CO$_2$ tendencies even though the surface CO$_2$ flux does not change and the entrainment flux is lower.}
+
+\textbf{NPP does not vary under high subsidence because, as we explained earlier in this response, the (Ci-Ca) CO$_2$ gradient and $g_s$ have small opposite responses, which compensate each other.}
+
+\item[C5: Figure 9:] What do you mean by instantaneous change in boundary-layer height in the
+computation of CO$_2$ tendencies? Should it not be instantaneous value instead?
+
+\textbf{We agree with the Reviewer that this part of the sentence is incorrect. We replaced the "instantaneous change in boundary-layer height" with just "boundary-layer height".}
+
+\end{description}
+
+\begin{thebibliography}{88}
+
+\bibitem[{Casso-Torralba et~al.(2008)Casso-Torralba,
+    Vil{\`a}-Guerau~de Arellano, Bosveld, Soler, Vermeulen, Werner,
+    and Moors}]{CassoTorralba:2008} Casso-Torralba,~P.,
+  Vil{\`a}-Guerau~de Arellano,~J., Bosveld,~F., Soler,~M.~R.,
+  Vermeulen,~A., Werner,~C., and Moors,~E.: {Diurnal and vertical
+    variability of the sensible heat and carbon dioxide budgets in the
+    atmospheric surface layer}, J. Geophys. Res., 113, D12119, 2008.
+
+\bibitem[{Jacobs et~al.(1996)Jacobs, van~den Hurk, and
+    de~Bruin}]{Jacobs:1996} Jacobs,~C.~M.~J., van~den Hurk,~B.~M.~M.,
+  and de~Bruin,~H.~A.~R.: {Stomatal behaviour and photosynthetic rate
+    of unstressed grapevines in semi-arid conditions}, Agr. Forest
+  Meteorol., 80, 111--134, 1996.
+
+\bibitem[{Ronda et~al.(2001)Ronda, De~Bruin, and
+    Holtslag}]{Ronda:2001} Ronda,~R.~J., De~Bruin,~H., and
+  Holtslag,~A.: {Representation of the canopy conductance in modeling
+    the surface energy budget for low vegetation}, J. Appl. Meteorol.,
+  40, 1431--1444, 2001.
+
+\end{thebibliography}
+
+\end{document}
