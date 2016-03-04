@@ -8,4 +8,4 @@ Please note the wiki among the different tabs. The wiki contains all kinds of us
 The main repository is meant for sharing code, either simple example scripts, or complete routines that may be useful for other people within or outside the department. For example, there could be a piece of Python code related to WRF postprocessing, or a latex template for dissertation design. 
 
 ### Working with git
-Editing online is possible, but it works better if you clone the repository, edit it locally and then upload the changes. For anyone who is not familiar with git: don't worry. We will dedicate a wiki page on that, all the information you'll need will be there shortly.
+Editing online is possible, but it works better if you clone the repository, edit it locally and then upload the changes. For anyone who is not familiar with git: don't worry. We will dedicate a wiki page to that, all the information you'll need will be there shortly.
