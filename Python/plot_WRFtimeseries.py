@@ -17,7 +17,7 @@ from matplotlib.colors import LogNorm
 
 ##############################################################################################
 """specify the following:"""
-"""directory of the WRF output and grid resolution [m] for each domain:"""
+"""directory of the WRF output:"""
 wrfout_path='/Storage/WRF/super004/WRF/run_paper2/output'
 """x- and y-location of the location you want to plot, the WRF domain, WRF vertical level and variable of interest"""
 xloc=22
